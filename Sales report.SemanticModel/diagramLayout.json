@@ -1,0 +1,61 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 578.38305001469371,
+            "y": -4.8446979598452913
+          },
+          "nodeIndex": "DimCustomer",
+          "nodeLineageTag": "204880c4-5696-45e8-bc40-b543a463a0b0",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 10,
+            "y": 61.140412819754644
+          },
+          "nodeIndex": "DimProduct",
+          "nodeLineageTag": "ccb40ce6-1943-441a-b035-74f7b2ac1ae2",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 294.20156119318523,
+            "y": -10
+          },
+          "nodeIndex": "FactFinance",
+          "nodeLineageTag": "70352b78-7ade-471a-889e-f92dc4650867",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

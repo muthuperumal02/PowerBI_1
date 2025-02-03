@@ -1,0 +1,8 @@
+relationship AutoDetected_02090338-7f95-4550-8d4c-5618ebd29d95
+	fromColumn: FactFinance.CustomerID
+	toColumn: DimCustomer.CustomerID
+
+relationship AutoDetected_0c38498e-98ca-407f-a93a-063d848f4c29
+	fromColumn: FactFinance.ProductID
+	toColumn: DimProduct.ProductID
+

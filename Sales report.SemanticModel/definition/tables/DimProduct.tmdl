@@ -1,0 +1,41 @@
+table DimProduct
+	lineageTag: ccb40ce6-1943-441a-b035-74f7b2ac1ae2
+
+	column ProductID
+		dataType: int64
+		formatString: 0
+		lineageTag: ebf948b2-9b4e-4e5d-b67e-484dda4f3ba1
+		summarizeBy: none
+		sourceColumn: ProductID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Product
+		dataType: string
+		lineageTag: 538d6297-8091-4648-b140-6c9f307d8ccd
+		summarizeBy: none
+		sourceColumn: Product
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductGroup
+		dataType: string
+		lineageTag: 6886e5fc-46d8-4ce0-bcb3-2db59abbb181
+		summarizeBy: none
+		sourceColumn: ProductGroup
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimProduct = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\perumalm\Documents\Github copilot\Git_Copilot_POC.xlsx"), null, true),
+				    DimProduct_Sheet = Source{[Item="DimProduct",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(DimProduct_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"ProductID", Int64.Type}, {"Product", type text}, {"ProductGroup", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
