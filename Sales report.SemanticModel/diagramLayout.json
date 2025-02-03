@@ -10,8 +10,8 @@
       "nodes": [
         {
           "location": {
-            "x": 578.38305001469371,
-            "y": -4.8446979598452913
+            "x": 904.38305001469371,
+            "y": 21
           },
           "nodeIndex": "DimCustomer",
           "nodeLineageTag": "204880c4-5696-45e8-bc40-b543a463a0b0",
@@ -36,8 +36,8 @@
         },
         {
           "location": {
-            "x": 294.20156119318523,
-            "y": -10
+            "x": 452.20156119318523,
+            "y": 413
           },
           "nodeIndex": "FactFinance",
           "nodeLineageTag": "70352b78-7ade-471a-889e-f92dc4650867",
