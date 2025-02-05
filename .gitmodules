@@ -1,0 +1,3 @@
+[submodule "Git_Demo"]
+	path = Git_Demo
+	url = https://muthuperumalm@dev.azure.com/muthuperumalm/Git_Demo/_git/Git_Demo
